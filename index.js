@@ -211,8 +211,8 @@ Practice accessing data above by console.log-ing following items:
 console.log(`task 1a`, artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-console.log(`task 1b`, artists[2].bio);
 
+console.log(`task 1b`, artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
@@ -222,13 +222,11 @@ artists[8].name = 'Vincent Van Gogh';
 
 console.log(`task 2`, artists[8].name)
 
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
 1. Receive an array
 2. Receive a number, which is the desired index in the array.
 3. Return a string in the format `the artist at index {id} is {name}`
-
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, number) {
@@ -237,18 +235,19 @@ function getArtistByIndex(array, number) {
 
 console.log(`task 3`,getArtistByIndex(artists, 0));
 
+
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
 1. Receive an array
 2. Return a new array with names of artists who were born in and died in 20th century (1900-2000) 
-
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array) {
-  const NewArray = []
-
+function get20s(/*Your Code Here*/) {
+  /*Your Code Here*/
 }
 
 
@@ -259,7 +258,6 @@ Use removeArtist to do the following:
 2. Receive a number which is the desired index in the array
 3. The function should remove an artist from the array at the index
 4. Return the length of the remaining dataset.
-
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number) {
@@ -268,6 +266,8 @@ function removeArtist(array, number) {
 }
 
 console.log(`task 5`, removeArtist(artists, 0));
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -282,7 +282,6 @@ Use addArtist to do the following:
     bio: Add 1-2 sentences (or use lorem ipsum)
   }  
 3. Return the resulting array
-
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
@@ -292,16 +291,26 @@ function addArtist(array) {
 
 console.log(`task6`, addArtist(artists))
 
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
-
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  const lotsOfPaint = [];
+  for(let i = 0; i < array.length; i ++){
+    if(array[i].paintings > 100){
+      lotsOfPaint.push(array[i].name); 
+    }
+  }
+  return lotsOfPaint;
 }
+
+console.log(`task 7`, lotsOfArt(artists));
+
 
 
 /* ***** END OF TASKS ***** */
