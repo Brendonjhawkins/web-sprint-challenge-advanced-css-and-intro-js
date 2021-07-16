@@ -149,6 +149,7 @@ button:hover{
     }
     nav span{
         height: 75%;
+        border-left:2px solid #626262;
     }
     .title-container hr{
         width:100%;
