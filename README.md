@@ -23,11 +23,16 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+-Accessibility is a multi faceted practice in web design. I would say accessibility has two core components that it looks at, and those cores branch into multiple avenues. One side is concerned with the architecture of the device being used. So accessibility can be making sure that twitter.com pulls up correctly on your IOT device, let’s say your refrigerator screen, or your mobile phone, or your two screen desktop computer set up. While also this other side looks at human impairment Access. This considers hearing assistance, sight assistance, and touch assistance.
+2. Talk about 3 different things you can do to ensure your website is accessible.
+-You scalable units to size things, this way when switching between devices a website pulls up correctly on all devices. Another useful tool is the use of semantic elements. And and making sure all attributes are filled out on all image tags.
 3. How would you explain the concept of a variable to someone new to programming?
+-A variable stores a set of data. 
 4. What is the purpose of using functions in code?
+-A function is procedure that can be called to action when needed in javascript.
 5. How do you access a key inside of an object inside of an array?
+-array[i].key = array - index - key
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
