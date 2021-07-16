@@ -137,12 +137,20 @@ button:hover{
 
 /* Media Queries */
 @media(max-width: 500px){
-    nav{
-        width: 50%;
+    /* Header nav bar */
+
+
+    /* Header Image */
+    .title-container div{
+        width: 100%;
     }
-    
-    nav span{
-        padding-left: 5px;
-        padding-right: 5px;
+
+    /* Artist Section */
+    .artists-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .artist{
+        height:30vh
     }
 }
