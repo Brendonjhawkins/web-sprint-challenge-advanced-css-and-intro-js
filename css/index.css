@@ -137,6 +137,9 @@ button:hover{
 
 /* Media Queries */
 @media(max-width: 500px){
+    body{
+        max-width: 100%;
+    }
     /* Header nav bar */
 
 
@@ -147,10 +150,28 @@ button:hover{
 
     /* Artist Section */
     .artists-container{
-        flex-direction: column;
+        display: flex;
+        align-items: space-evenly;
+        justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
+        height: 100vh;
+        /* padding: 10px; */
     }
     .artist{
-        height:30vh
+        display: flex;
+        justify-content: center;
+        width:80%;
+        height: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .artist img{
+        width:400px;
+        height: 200px; 
+    }
+    .artist .bio{
+        height: 20vh;
+        font-size:70%;
     }
 }
