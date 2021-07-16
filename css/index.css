@@ -136,27 +136,39 @@ button:hover{
 }
 
 /* Media Queries */
-@media(max-width: 500px){
-    body{
-        max-width: 100%;
-    }
+ @media(max-width: 500px){
     /* Header nav bar */
+        nav{
+        width: 40%;
+        align-content: center;
+        justify-content: space-evenly;
 
-
+    }
+    nav a{
+        font-size: medium;
+    }
+    nav span{
+        height: 75%;
+    }
+    .title-container hr{
+        width:100%;
+    }
     /* Header Image */
     .title-container div{
         width: 100%;
     }
+    .title-container h1{
+        font-size: 1;
+    }
 
     /* Artist Section */
     .artists-container{
-        display: flex;
-        align-items: space-evenly;
+        align-items: center;
+        align-content: space-between;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         height: 100vh;
-        /* padding: 10px; */
     }
     .artist{
         display: flex;
@@ -167,11 +179,11 @@ button:hover{
         flex-wrap: wrap;
     }
     .artist img{
-        width:400px;
-        height: 200px; 
+        width:90%;
+        height: 30vh; 
     }
     .artist .bio{
         height: 20vh;
         font-size:70%;
     }
-}
+ }
